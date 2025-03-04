@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:gym_system/config/routes/routes.dart';
 import 'package:gym_system/core/utils/app_color.dart';
 import 'package:gym_system/core/utils/app_string.dart';
 import 'package:gym_system/core/utils/component/custom_button.dart';
@@ -62,7 +64,9 @@ class SignInScreen extends StatelessWidget {
                 const CustomButton(text: AppString.login),
                 const CustomSpaceHeight(height: .02),
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    GoRouter.of(context).push(AppRoute.signUpScreen);
+                  },
                   child: Text.rich(TextSpan(children: [
                     TextSpan(
                       text: AppString.dontHaveAnAccount,
