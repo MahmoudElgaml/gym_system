@@ -18,4 +18,9 @@ abstract class AppString {
   static const String female = 'Female';
   static const String doHaveAnAccount = "Do have an account? ";
   static const String signIn = 'Sign In';
+  static const String home = 'Home';
+  static const String profile = 'profile';
+  static const String scan = 'scan';
+  static const String more = 'more';
+
 }
