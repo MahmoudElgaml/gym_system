@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gym_system/core/utils/app_color.dart';
 
 import 'app_style.dart';
 
@@ -86,7 +87,7 @@ abstract class AppFonts {
 
   static TextStyle textSemiBold18(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFFFFFFFF),
+      color: AppColor.textGrayColor,
       fontSize: AppStyle.getResponsiveFontSize(context: context, fontSize: 18),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
