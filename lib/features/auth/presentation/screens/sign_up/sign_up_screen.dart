@@ -43,49 +43,51 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0),
-          child: Column(
-            children: [
-              const CustomSpaceHeight(height: .1),
-              const Logo(),
-              CustomPhone(phone: phone),
-              const CustomSpaceHeight(height: .005),
-              CustomTextField(controller: name, hint: AppString.name),
-              const CustomSpaceHeight(height: .025),
-              CustomTextField(controller: email, hint: AppString.email),
-              const CustomSpaceHeight(height: .025),
-              CustomTextField(
-                controller: password,
-                hint: AppString.password,
-                isPassword: true,
-              ),
-              const CustomSpaceHeight(height: .025),
-              CustomBirthDay(birthDayNotifier: birthDayNotifier),
-              const CustomSpaceHeight(height: .02),
-              CustomGender(gender: gender),
-              const CustomSpaceHeight(height: .03),
-              const CustomButton(text: AppString.signUp),
-              const CustomSpaceHeight(height: .025),
-              GestureDetector(
-                onTap: () {
-                  GoRouter.of(context).push(AppRoute.signInScreen);
-                },
-                child: Text.rich(TextSpan(children: [
-                  TextSpan(
-                    text: AppString.doHaveAnAccount,
-                    style: AppFonts.textRegular16(context)
-                        .copyWith(color: AppColor.textGrayColor),
-                  ),
-                  TextSpan(
-                    text: AppString.signIn,
-                    style: AppFonts.textRegular16(context)
-                        .copyWith(color: AppColor.whiteColor),
-                  ),
-                ])),
-              ),
-            ],
+      body: SingleChildScrollView(
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: Column(
+              children: [
+                const CustomSpaceHeight(height: .1),
+                const Logo(),
+                CustomPhone(phone: phone),
+                const CustomSpaceHeight(height: .005),
+                CustomTextField(controller: name, hint: AppString.name),
+                const CustomSpaceHeight(height: .025),
+                CustomTextField(controller: email, hint: AppString.email),
+                const CustomSpaceHeight(height: .025),
+                CustomTextField(
+                  controller: password,
+                  hint: AppString.password,
+                  isPassword: true,
+                ),
+                const CustomSpaceHeight(height: .025),
+                CustomBirthDay(birthDayNotifier: birthDayNotifier),
+                const CustomSpaceHeight(height: .02),
+                CustomGender(gender: gender),
+                const CustomSpaceHeight(height: .03),
+                const CustomButton(text: AppString.signUp),
+                const CustomSpaceHeight(height: .025),
+                GestureDetector(
+                  onTap: () {
+                    GoRouter.of(context).push(AppRoute.signInScreen);
+                  },
+                  child: Text.rich(TextSpan(children: [
+                    TextSpan(
+                      text: AppString.doHaveAnAccount,
+                      style: AppFonts.textRegular16(context)
+                          .copyWith(color: AppColor.textGrayColor),
+                    ),
+                    TextSpan(
+                      text: AppString.signIn,
+                      style: AppFonts.textRegular16(context)
+                          .copyWith(color: AppColor.whiteColor),
+                    ),
+                  ])),
+                ),
+              ],
+            ),
           ),
         ),
       ),
