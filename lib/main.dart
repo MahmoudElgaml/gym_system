@@ -8,15 +8,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Flutter Demo',
-
-    
-    
-routerConfig: AppRoute.router,
+      themeMode: ThemeMode.dark,
+      darkTheme: ThemeData.dark(),
+      routerConfig: AppRoute.router,
     );
   }
 }

@@ -1,22 +1,14 @@
-
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:gym_system/features/first_screen.dart';
-
-
-
-
+import 'package:gym_system/features/auth/presentation/screens/sign_in/sign_in_screen.dart';
 
 class AppRoute {
-  static const first = '/';
+  static const signInScreen = '/';
   static final router = GoRouter(
     routes: [
       GoRoute(
-        path: first,
-        builder: (context, state) => const FirstScreen(),
+        path: signInScreen,
+        builder: (context, state) => const SignInScreen(),
       )
-    
     ],
   );
 }
-
