@@ -46,7 +46,7 @@ dependencies:
   # Enhanced dropdown button widget
   dropdown_button2: ^2.3.9
   # Internationalization and localization
-  intl: ^0.20.0
+  intl: ^0.19.0
   # Dio request/response logger
   pretty_dio_logger: ^1.4.0
   # Hive database integration for Flutter
@@ -64,6 +64,10 @@ dependencies:
   bottom_picker: ^2.11.1
   radio_group_v2: ^3.3.1
   flashy_tab_bar2: ^0.0.10
+  device_preview: ^1.2.0
+  percent_indicator: ^4.2.4
+  carousel_slider: ^5.0.0
+  smooth_page_indicator: ^1.2.1
 
 
 dev_dependencies:

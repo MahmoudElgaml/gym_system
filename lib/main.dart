@@ -1,8 +1,16 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:gym_system/config/routes/routes.dart';
+import 'package:device_preview/device_preview.dart';
+import 'package:gym_system/core/utils/app_color.dart';
 
 void main() {
-  runApp(const MyApp());
+ runApp(
+  DevicePreview(
+    enabled: !kReleaseMode,
+    builder: (context) => MyApp(), // Wrap your app
+  ),
+);
 }
 
 class MyApp extends StatelessWidget {
@@ -11,8 +19,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      themeMode: ThemeMode.dark,
-      darkTheme: ThemeData.dark(),
+      themeMode: ThemeMode.light,
+      darkTheme: ThemeData.dark(
+      ),
+      theme: ThemeData(
+        scaffoldBackgroundColor: AppColor.blackColor,
+      appBarTheme: AppBarTheme(
+         color: AppColor.blackColor,
+        centerTitle: true,
+      )
+      ),
       routerConfig: AppRoute.router,
       debugShowCheckedModeBanner: false,
     );
