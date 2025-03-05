@@ -65,6 +65,8 @@ dependencies:
   radio_group_v2: ^3.3.1
   flashy_tab_bar2: ^0.0.10
   device_preview: ^1.2.0
+  percent_indicator: ^4.2.4
+  carousel_slider: ^5.0.0
 
 
 dev_dependencies:

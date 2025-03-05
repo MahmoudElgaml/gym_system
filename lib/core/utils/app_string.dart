@@ -22,5 +22,8 @@ abstract class AppString {
   static const String profile = 'profile';
   static const String scan = 'scan';
   static const String more = 'more';
+   static const String welcome = 'welcome, ';
+    static const String viewAll = 'View All';
+    static const String capacity = 'Capacity';
 
 }
