@@ -61,11 +61,15 @@ class SignInScreen extends StatelessWidget {
                   ),
                 ),
                 const CustomSpaceHeight(height: .01),
-                const CustomButton(text: AppString.login),
+                InkWell(
+                    onTap: () {
+                      GoRouter.of(context).push(AppRoute.homeLayoutScreen);
+                    },
+                    child: const CustomButton(text: AppString.login)),
                 const CustomSpaceHeight(height: .02),
                 GestureDetector(
                   onTap: () {
-                    GoRouter.of(context).push(AppRoute.homeLayoutScreen);
+                    GoRouter.of(context).push(AppRoute.signUpScreen);
                   },
                   child: Text.rich(TextSpan(children: [
                     TextSpan(

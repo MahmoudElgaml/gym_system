@@ -1,4 +1,3 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
@@ -8,8 +7,6 @@ import 'package:gym_system/core/utils/app_string.dart';
 import 'package:gym_system/core/utils/fonts.dart';
 import 'package:gym_system/features/home/presentation/widgets/capacity_section.dart';
 import 'package:gym_system/features/home/presentation/widgets/slider_image_section.dart';
-import 'package:percent_indicator/circular_percent_indicator.dart';
-import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -24,7 +21,8 @@ class HomeScreen extends StatelessWidget {
             Assets.logo,
             width: 80,
             height: 80,
-            color: AppColor.primaryColor,
+            colorFilter:
+                const ColorFilter.mode(AppColor.primaryColor, BlendMode.srcIn),
           ),
         ],
         title: Text(
@@ -32,6 +30,7 @@ class HomeScreen extends StatelessWidget {
           style: AppFonts.textMedium20(context)
               .copyWith(color: AppColor.whiteColor),
         ),
+        leading: const SizedBox(),
       ),
       body: Padding(
         padding: const EdgeInsets.only(

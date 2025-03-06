@@ -15,6 +15,7 @@ class HomeLayoutScreen extends StatefulWidget {
 
 class _HomeLayoutScreenState extends State<HomeLayoutScreen> {
   int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,13 +38,8 @@ class _HomeLayoutScreenState extends State<HomeLayoutScreen> {
           FlashyTabBarItem(
             activeColor: AppColor.primaryColor,
             inactiveColor: AppColor.whiteColor,
-            icon: const Icon(
-              Icons.home,
-              color: AppColor.primaryColor,
-            ),
-            title: const Text(
-              AppString.home,
-            ),
+            icon: const Icon(Icons.home),
+            title: const Text(AppString.home),
           ),
           FlashyTabBarItem(
             activeColor: AppColor.primaryColor,
