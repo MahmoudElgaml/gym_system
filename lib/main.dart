@@ -5,12 +5,12 @@ import 'package:device_preview/device_preview.dart';
 import 'package:gym_system/core/utils/app_color.dart';
 
 void main() {
- runApp(
-  DevicePreview(
-    enabled: !kReleaseMode,
-    builder: (context) => MyApp(), // Wrap your app
-  ),
-);
+  runApp(
+    DevicePreview(
+      enabled: !kReleaseMode,
+      builder: (context) => const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -18,19 +18,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      themeMode: ThemeMode.light,
-      darkTheme: ThemeData.dark(
+    return SafeArea(
+      child: MaterialApp.router(
+        themeMode: ThemeMode.light,
+        darkTheme: ThemeData.dark(),
+        theme: ThemeData(
+            scaffoldBackgroundColor: AppColor.blackColor,
+            appBarTheme: const AppBarTheme(
+              color: AppColor.blackColor,
+              centerTitle: true,
+            )),
+        routerConfig: AppRoute.router,
+        debugShowCheckedModeBanner: false,
       ),
-      theme: ThemeData(
-        scaffoldBackgroundColor: AppColor.blackColor,
-      appBarTheme: AppBarTheme(
-         color: AppColor.blackColor,
-        centerTitle: true,
-      )
-      ),
-      routerConfig: AppRoute.router,
-      debugShowCheckedModeBanner: false,
     );
   }
 }

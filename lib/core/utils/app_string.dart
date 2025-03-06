@@ -19,11 +19,13 @@ abstract class AppString {
   static const String doHaveAnAccount = "Do have an account? ";
   static const String signIn = 'Sign In';
   static const String home = 'Home';
-  static const String profile = 'profile';
+  static const String profile = 'Profile';
   static const String scan = 'scan';
   static const String more = 'more';
-   static const String welcome = 'welcome, ';
-    static const String viewAll = 'View All';
-    static const String capacity = 'Capacity';
-
+  static const String welcome = 'welcome, ';
+  static const String viewAll = 'View All';
+  static const String capacity = 'Capacity';
+  static const String id = 'ID';
+  static const String currentMembership = 'Current Membership';
+  static const String viewAllMemberships = 'View all memberships';
 }
