@@ -6,6 +6,7 @@ import 'package:gym_system/core/utils/component/custom_space.dart';
 import '../../../../core/utils/app_color.dart';
 import '../../../../core/utils/fonts.dart';
 import '../widgets/custom_title_and_sub_title_of_profile.dart';
+import '../widgets/section_current_membership.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -48,35 +49,11 @@ class ProfileScreen extends StatelessWidget {
               subTitle: '12212186',
             ),
             const CustomSpaceHeight(height: .02),
-            Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    FittedBox(
-                      fit: BoxFit.scaleDown,
-                      child: Text(
-                        AppString.currentMembership,
-                        style: AppFonts.textSemiBold16(context)
-                            .copyWith(color: AppColor.primaryColor),
-                      ),
-                    ),
-                    FittedBox(
-                      fit: BoxFit.scaleDown,
-                      child: Text(
-                        AppString.viewAllMemberships,
-                        style: AppFonts.textRegular12(context).copyWith(
-                            color: AppColor.primaryColor, fontSize: 12),
-                      ),
-                    ),
-                  ],
-                ),
-                Container()
-              ],
-            )
+            SectionCurrentMembership()
           ],
         ),
       ),
     );
   }
 }
+

@@ -28,4 +28,8 @@ abstract class AppString {
   static const String id = 'ID';
   static const String currentMembership = 'Current Membership';
   static const String viewAllMemberships = 'View all memberships';
+  static const String startDate = 'Start date';
+  static const String expiryDate = 'Expiry date';
+  static const String attendance = 'Attendance';
+  static const String expired = 'Expired';
 }
