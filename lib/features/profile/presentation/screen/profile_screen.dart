@@ -7,6 +7,7 @@ import '../../../../core/utils/app_color.dart';
 import '../../../../core/utils/fonts.dart';
 import '../widgets/custom_title_and_sub_title_of_profile.dart';
 import '../widgets/section_current_membership.dart';
+import '../widgets/section_of_advantages.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -22,38 +23,42 @@ class ProfileScreen extends StatelessWidget {
               .copyWith(color: AppColor.whiteColor),
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 8.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const CustomSpaceHeight(height: .02),
-            const Center(
-              child: CircleAvatar(
-                  radius: 70,
-                  backgroundImage: AssetImage(Assets.avatarMostafa)),
-            ),
-            const CustomSpaceHeight(height: .02),
-            const CustomTitleAndSubTitleOfProfile(
-              title: AppString.name,
-              subTitle: 'Mostafa Esmail Elshrbeeny',
-            ),
-            const CustomSpaceHeight(height: .01),
-            const CustomTitleAndSubTitleOfProfile(
-              title: AppString.phone,
-              subTitle: '01101340325',
-            ),
-            const CustomSpaceHeight(height: .01),
-            const CustomTitleAndSubTitleOfProfile(
-              title: AppString.id,
-              subTitle: '12212186',
-            ),
-            const CustomSpaceHeight(height: .02),
-            SectionCurrentMembership()
-          ],
+      body: const SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              CustomSpaceHeight(height: .02),
+              Center(
+                child: CircleAvatar(
+                    radius: 70,
+                    backgroundImage: AssetImage(Assets.avatarMostafa)),
+              ),
+              CustomSpaceHeight(height: .02),
+              CustomTitleAndSubTitleOfProfile(
+                title: AppString.name,
+                subTitle: 'Mostafa Esmail Elshrbeeny',
+              ),
+              CustomSpaceHeight(height: .01),
+              CustomTitleAndSubTitleOfProfile(
+                title: AppString.phone,
+                subTitle: '01101340325',
+              ),
+              CustomSpaceHeight(height: .01),
+              CustomTitleAndSubTitleOfProfile(
+                title: AppString.id,
+                subTitle: '12212186',
+              ),
+              CustomSpaceHeight(height: .02),
+              SectionCurrentMembership(),
+              CustomSpaceHeight(height: .02),
+              SectionOfAdvantages(),
+              CustomSpaceHeight(height: .02),
+            ],
+          ),
         ),
       ),
     );
   }
 }
-

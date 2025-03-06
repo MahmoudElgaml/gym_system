@@ -32,4 +32,8 @@ abstract class AppString {
   static const String expiryDate = 'Expiry date';
   static const String attendance = 'Attendance';
   static const String expired = 'Expired';
+  static const String advantages = 'Advantages';
+  static const String invitations = 'Invitations';
+  static const String inBody = 'In-Body';
+  static const String attendanceDates = 'Attendance Dates';
 }
