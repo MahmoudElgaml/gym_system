@@ -7,6 +7,7 @@ import 'package:gym_system/core/utils/app_string.dart';
 import 'package:gym_system/core/utils/fonts.dart';
 import 'package:gym_system/features/home/presentation/widgets/capacity_section.dart';
 import 'package:gym_system/features/home/presentation/widgets/slider_image_section.dart';
+import 'package:gym_system/features/home/presentation/widgets/youtube_video%20widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -55,13 +56,17 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             const Gap(15),
-            const Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SliderImageSection(),
-                Gap(15),
-                CapacitySection(),
-              ],
+            const SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SliderImageSection(),
+                  Gap(15),
+                  CapacitySection(),
+                  Gap(15),
+                  YoutubeVideowidget()
+                ],
+              ),
             )
           ],
         ),

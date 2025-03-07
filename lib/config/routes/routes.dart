@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:gym_system/features/auth/presentation/screens/sign_in/sign_in_screen.dart';
 import 'package:gym_system/features/auth/presentation/screens/sign_up/sign_up_screen.dart';
-import 'package:gym_system/features/home/home_screen.dart';
+import 'package:gym_system/features/home/presentation/screens/home_screen.dart';
 import 'package:gym_system/features/home_layout/manger/cubit/home_layout_cubit.dart';
 import 'package:gym_system/features/home_layout/presentation/screens/home_layout_screen.dart';
 import 'package:gym_system/features/more_setting/presentation/screens/more_setting.dart';
