@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:gym_system/features/home/home_screen.dart';
 import 'package:gym_system/features/profile/presentation/screen/profile_screen.dart';
-import 'package:gym_system/features/scan_qr/scan_qr_screen.dart';
+import 'package:gym_system/features/scan_qr/presentation/screen/scan_qr_screen.dart';
 import 'package:meta/meta.dart';
 
 import '../../../more_setting/more_setting.dart';
@@ -22,10 +22,10 @@ class HomeLayoutCubit extends Cubit<HomeLayoutState> {
         emit(ProfileScreenState());
         break;
       case 2:
-        emit(MoreSettingScreenState());
+        emit(ScanQrScreenState());
         break;
       case 3:
-        emit(ScanQrScreenState());
+        emit(MoreSettingScreenState());
         break;
     }
 

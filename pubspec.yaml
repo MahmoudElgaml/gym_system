@@ -68,6 +68,7 @@ dependencies:
   percent_indicator: ^4.2.4
   carousel_slider: ^5.0.0
   smooth_page_indicator: ^1.2.1
+  qr_code_scanner_plus: ^2.0.10+1
 
 
 dev_dependencies:
