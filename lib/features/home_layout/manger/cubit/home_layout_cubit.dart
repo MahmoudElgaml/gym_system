@@ -5,7 +5,7 @@ import 'package:gym_system/features/profile/presentation/screen/profile_screen.d
 import 'package:gym_system/features/scan_qr/scan_qr_screen.dart';
 import 'package:meta/meta.dart';
 
-import '../../../more_setting/more_setting.dart';
+import '../../../more_setting/presentation/screens/more_setting.dart';
 
 part 'home_layout_state.dart';
 
@@ -22,10 +22,10 @@ class HomeLayoutCubit extends Cubit<HomeLayoutState> {
         emit(ProfileScreenState());
         break;
       case 2:
-        emit(MoreSettingScreenState());
+        emit(ScanQrScreenState());
         break;
       case 3:
-        emit(ScanQrScreenState());
+        emit(MoreSettingScreenState());
         break;
     }
 

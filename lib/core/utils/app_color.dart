@@ -12,5 +12,6 @@ abstract class AppColor{
   static const Color blackColor= Colors.black;
   static const Color scaffoldBackgroundColor= Color(0xff121212);
   static const Color redColor= Colors.red;
+  static const Color listTileBackgroundColor= Color(0xff2a2a2a);
 
 }

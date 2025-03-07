@@ -5,7 +5,7 @@ import 'package:gym_system/features/auth/presentation/screens/sign_up/sign_up_sc
 import 'package:gym_system/features/home/home_screen.dart';
 import 'package:gym_system/features/home_layout/manger/cubit/home_layout_cubit.dart';
 import 'package:gym_system/features/home_layout/presentation/screens/home_layout_screen.dart';
-import 'package:gym_system/features/more_setting/more_setting.dart';
+import 'package:gym_system/features/more_setting/presentation/screens/more_setting.dart';
 import 'package:gym_system/features/profile/presentation/screen/profile_screen.dart';
 import 'package:gym_system/features/scan_qr/scan_qr_screen.dart';
 
