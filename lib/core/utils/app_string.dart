@@ -36,4 +36,7 @@ abstract class AppString {
   static const String invitations = 'Invitations';
   static const String inBody = 'In-Body';
   static const String attendanceDates = 'Attendance Dates';
+  static const String scanQr = 'Scan Qr';
+  static const String scanACode = 'Scan a code';
+  static const String result = 'Result';
 }

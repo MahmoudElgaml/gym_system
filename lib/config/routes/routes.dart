@@ -7,7 +7,7 @@ import 'package:gym_system/features/home_layout/manger/cubit/home_layout_cubit.d
 import 'package:gym_system/features/home_layout/presentation/screens/home_layout_screen.dart';
 import 'package:gym_system/features/more_setting/presentation/screens/more_setting.dart';
 import 'package:gym_system/features/profile/presentation/screen/profile_screen.dart';
-import 'package:gym_system/features/scan_qr/scan_qr_screen.dart';
+import 'package:gym_system/features/scan_qr/presentation/screen/scan_qr_screen.dart';
 
 class AppRoute {
   static const signInScreen = '/';
